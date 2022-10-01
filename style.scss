@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+$purple-main: rgb(70, 0, 151);
+
+.invalid {
+  outline: 2px solid red !important;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  
+  .background {
+    width: 40%;
+    background-image: url(img/pawel-czerwinski-F0yDf-GBjMQ-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .logo-div {
+      background-color: $purple-main;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 10em;
+      padding: 1em 0;
+      h1 {
+        font-family: 'Aref Ruqaa Ink', serif;
+        color: white;
+      }
+      img {
+        width: 75px;
+        height: 75px;
+      } 
+    }
+    .credits {
+      margin-bottom: 2em;
+    }
+    a {
+      color: rgb(0, 0, 0);
+      &:visited {
+        color: black;
+      }
+    }
+  }
+  
+  .main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .text-box {
+    width: 75%;
+    padding: 0 5em;
+  }
+  form {
+    width: 100%;
+    .form-left {
+      padding: 3em 5em;
+      -webkit-box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.25);
+      -moz-box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.25);
+      box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.25);
+      h2 {
+        margin-bottom: 1em;
+        color: $purple-main;
+      }
+      .inputs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 35%);
+        justify-content: space-between;
+        
+        .input {
+          display: flex;
+          flex-direction: column;
+          label {
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+          }
+          .error {
+            &:invalid {
+              outline: 2px solid red;
+            }
+          }
+          input {
+            height: 25px;
+            border: none;
+            outline: 1px solid lightgray;
+            &:focus {
+              outline: 2px solid $purple-main;
+            }
+          }
+        }
+      }
+    }
+    .form-right {
+      padding: 2em 5em;
+      .btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 2em;
+        width: 200px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        border: none;
+        margin-bottom: 1em;
+        background-color: $purple-main;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+        &:hover {
+          color: $purple-main;
+          border: 3px solid $purple-main;
+          background-color: white;
+        }
+      }
+      p {
+        letter-spacing: 1px;
+        span {
+          color: $purple-main;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.margin-top {
+  margin-top: 2em;
+}

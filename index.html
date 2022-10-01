@@ -14,33 +14,43 @@
   <title>Sign-up form</title>
 </head>
 <body>
-  <div class="background">
-    <div class="logo-div">
-      <img src="img/alien-head.png" alt="alien" class="logo">
-      <h1>ChiendeGlace</h1>
+  <div class="container">
+    <div class="background">
+      <div class="logo-div">
+        <img src="img/alien-head.png" alt="alien" class="logo">
+        <h1>ChiendeGlace</h1>
+      </div>
+      <div class="credits">
+        <p>Photo by <a href="https://unsplash.com/@pawel_czerwinski" target="blank">Pawel Czerwinski</a> on <a href="https://unsplash.com" target="blank">Unsplash</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/ufo" title="ufo icons" target="blank">Ufo icons created by Freepik - Flaticon</a></p>
+      </div>
     </div>
-    <div class="credits">
-      <p>Photo by <a href="https://unsplash.com/@pawel_czerwinski" target="blank">Pawel Czerwinski</a> on <a href="https://unsplash.com" target="blank">Unsplash</a></p>
-      <p><a href="https://www.flaticon.com/free-icons/ufo" title="ufo icons">Ufo icons created by Freepik - Flaticon</a></p>
+    <div class="main">
+      <div class="text-box">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam qui alias recusandae eos unde, veniam voluptas officia tempora. Aspernatur soluta pariatur labore non sapiente.</h2>
+        <h2 class="margin-top">Lorem ipsum dolor sit.</h2>
+      </div>
+      <form action="#" class="margin-top">
+        <div class="form-left">
+          <h2>Let's do this!</h2>
+          <div class="inputs">
+            <div class="input"><label for="first-name">NAME</label><input id="first-name" type="text" required></div>
+            <div class="input"><label for="last-name">LAST NAME</label><input id="last-name" type="text" required></div>
+            <div class="input"><label for="email">EMAIL</label><input id="email" type="email" required></div>
+            <div class="input"><label for="phone-number">PHONE NUMBER</label><input id="phone-number" type="text" minlength="9" maxlength="9"></div>
+            <div class="input"><label for="password">PASSWORD</label><input class="error" id="password" type="password" required></div>
+            <div class="input"><label for="confirm-password">CONFIRM PASSWORD</label><input class="error" id="confirm-password" type="password" required></div>
+          </div>
+        </div>
+        <div class="form-right">
+          <button type="submit" class="btn">Create Account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+      </form>
     </div>
   </div>
-  <div class="main">
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam qui alias recusandae eos unde, veniam voluptas officia tempora. Aspernatur soluta pariatur labore non sapiente.</h2>
-    <h2>Lorem ipsum dolor sit.</h2>
-    <form action="#">
-      <div class="form-left">
-        <div class="input"><label for="first-name">NAME</label><input id="first-name" type="text"></div>
-        <div class="input"><label for="last-name">LAST NAME</label><input id="last-name" type="text"></div>
-        <div class="input"><label for="email">EMAIL</label><input id="email" type="email"></div>
-        <div class="input"><label for="phone-number">PHONE NUMBER</label><input id="phone-number" type="text"></div>
-        <div class="input"><label for="password">PASSWORD</label><input id="password" type="password"></div>
-        <div class="input"><label for="confirm-password">CONFIRM PASSWORD</label><input id="confirm-password" type="password"></div>
-      </div>
-      <div class="form-right">
-        <button>Create Account</button>
-        <p>Already have an account? <span>Log in</span></p>
-      </div>
-    </form>
-  </div>
+
+
+  <script src="index.js"></script>
 </body>
 </html>
